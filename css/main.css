@@ -12,6 +12,8 @@ body {
   .emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
+    order: 2;
+    align-self:stretch;
   }
   
   .emoji a {
@@ -20,9 +22,28 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    order: 4;
+    align-self:stretch;
+
   }
   
   .icon {
     font-size: 4rem;
+    order: 1;
   }
+  .emojis{
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-template-rows: 49% 49%;
+    gap: 15px;
+  }
+  .emoji{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  .emoji p{
+    order: 3;
+  }
+  
   
